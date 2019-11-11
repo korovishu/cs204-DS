@@ -43,7 +43,7 @@ int searchl(Node* root, string key)
 {
     if(root==NULL) return 0;
     Node* temp = root;
-    while(temp->nxt!=NULL)
+    while(temp!=NULL)
     {
         if(temp->value==key) return 1;
         temp=temp->nxt;
@@ -92,4 +92,3 @@ int main()
         else break;
     }
 }
-
